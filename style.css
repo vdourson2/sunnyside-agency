@@ -57,4 +57,103 @@ table {
   box-sizing: border-box;
 }
 
+.header {
+  background-color: #3ebfff;
+  background-image: url(resources/images/photos/image-header.jpg);
+  background-position: center bottom;
+  background-size: auto 400px;
+  background-repeat: no-repeat;
+  color: hsl(0deg, 0%, 100%);
+  height: 538px;
+  padding: 32px 24px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+}
+.header__menu__list {
+  display: none;
+}
+.header__menu__burger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 3px 0;
+}
+.header__menu__burger__bar {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 24px;
+  height: 2px;
+}
+
+.header__title {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 6.5px;
+  line-height: 49px;
+  margin-top: 88px;
+}
+
+.header__arrow {
+  display: block;
+  margin: auto;
+  margin-top: 52px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+}
+.board__card__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.board__card--info {
+  text-align: center;
+  margin: 64px 24px;
+}
+.board__card__title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  color: hsl(212deg, 27%, 19%);
+}
+.board__card__text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: hsl(232deg, 10%, 55%);
+  margin: 24px 0 32px 0;
+}
+.board__card__anchor {
+  text-transform: uppercase;
+  text-decoration: solid underline 10px rgba(250, 212, 0, 0.5);
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  font-weight: 900;
+  font-style: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.services {
+  display: flex;
+  font-display: column;
+}
+.services__card--cherry {
+  background-image: url(resources/images/photos/image-graphic-design.jpg);
+}
+.services__card--mandarin {
+  background-image: url(resources/images/photos/image-photography.jpg);
+}
+
 /*# sourceMappingURL=style.css.map */

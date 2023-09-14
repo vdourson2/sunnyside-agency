@@ -65,7 +65,8 @@ $font-p: 'Barlow', sans-serif;
 //Variable colors : primary colors
 //Primary colors
 $color-red: hsl(7, 99%, 70%);
-$color-yellow: hsl(51, 100%, 49%);
+$color-yellow-opaque: hsl(51, 100%, 49%);
+$color-yellow-transp: rgba(250,212,0,0.5);
 $color-cyan_cherryText: hsl(167, 40%, 24%);
 $color-blue_mandarinText: hsl(198, 62%, 26%);
 $color-cyan_footer: hsl(168, 34%, 41%);
@@ -76,5 +77,8 @@ $color-grey_Trust: hsl(213, 9%, 39%);
 $color-grey_whiteText: hsl(232, 10%, 55%);
 $color-blue_director_testimonial: hsl(210, 4%, 67%);
 $color-white: hsl(0, 0%, 100%);
+
+//bacground blue
+$color-blue_background:#3ebfff;
 
 

@@ -1,1 +1,108 @@
 // Here are the styles for the header, footer, the grid system, etc
+
+.header {
+    background-color: $color-blue_background;
+    background-image: url(resources/images/photos/image-header.jpg);
+    background-position: center bottom;
+    background-size: auto 400px;
+    background-repeat: no-repeat;
+    color:$color-white;
+    height: 538px;
+    padding: 32px 24px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content:space-between;
+    height: 24px;
+    &__list {
+    display:none;
+    }
+    &__burger{
+        display: flex;
+        flex-direction: column;
+        gap:6px;
+        padding:3px 0;
+        &__bar{
+            background-color: $color-white;
+            width: 24px;
+            height: 2px;
+        }
+    }
+}
+
+.header__title{
+    font-family: $font-titles;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight:900;
+    text-align: center;
+    letter-spacing: 6.5px;
+    line-height: 49px;
+    margin-top: 88px;
+}
+
+.header__arrow{
+    display:block;
+    margin: auto;
+    margin-top:52px;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+    width:100%;
+    &__card{
+        &__img{
+            display:block;
+            width:100%;
+            object-fit: cover;
+        }
+        &--info{
+            text-align:center;
+            margin:64px 24px;
+        }
+        &__title{
+            font-family: $font-titles;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 39px;
+            color:$color-grey_Emily
+        }
+        &__text{
+            font-family: $font-p;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 30px;  
+            color:$color-grey_whiteText;    
+            margin: 24px 0 32px 0;      
+        }
+        &__anchor{
+            text-transform: uppercase;
+            text-decoration: solid underline 10px $color-yellow-transp;
+            font-family: $font-titles;
+            color:$color-grey_Emily;
+            font-weight: 900;
+            font-style: 15px;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.services{
+    display: flex;
+    font-display: column;
+    &__card{
+        &--cherry{
+            background-image: url(resources/images/photos/image-graphic-design.jpg);
+        }
+        &--mandarin{
+            background-image: url(resources/images/photos/image-photography.jpg);
+        }
+    }
+}
+
+
+
