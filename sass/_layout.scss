@@ -93,13 +93,42 @@
 
 .services{
     display: flex;
-    font-display: column;
+    flex-direction: column;
+    height: 1200px;
     &__card{
+        text-align: center;
+        background-position: center;
         &--cherry{
             background-image: url(resources/images/photos/image-graphic-design.jpg);
         }
         &--mandarin{
             background-image: url(resources/images/photos/image-photography.jpg);
+        }
+        &__title{
+            font-family: $font-titles;
+            font-weight: 900;
+            font-size: 28px;
+            line-height: 35px;
+            margin:398px 0 27px 0;
+            &--cherry{
+                color:$color-cyan_cherryText;
+            }
+            &--mandarin{
+                color:$color-blue_mandarinText;
+            }
+        }
+        &__text{
+            font-family: $font-p;
+            font-weight: 600;
+            font-size:15px;
+            line-height: 27px;
+            margin:0 24px 59px 24px;
+            &--cherry{
+                color:$color-cyan_cherryText;
+            }
+            &--mandarin{
+                color:$color-blue_mandarinText;
+            }
         }
     }
 }

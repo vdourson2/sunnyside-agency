@@ -147,13 +147,44 @@ table {
 
 .services {
   display: flex;
-  font-display: column;
+  flex-direction: column;
+  height: 1200px;
+}
+.services__card {
+  text-align: center;
+  background-position: center;
 }
 .services__card--cherry {
   background-image: url(resources/images/photos/image-graphic-design.jpg);
 }
 .services__card--mandarin {
   background-image: url(resources/images/photos/image-photography.jpg);
+}
+.services__card__title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  margin: 398px 0 27px 0;
+}
+.services__card__title--cherry {
+  color: hsl(167deg, 40%, 24%);
+}
+.services__card__title--mandarin {
+  color: hsl(198deg, 62%, 26%);
+}
+.services__card__text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 27px;
+  margin: 0 24px 59px 24px;
+}
+.services__card__text--cherry {
+  color: hsl(167deg, 40%, 24%);
+}
+.services__card__text--mandarin {
+  color: hsl(198deg, 62%, 26%);
 }
 
 /*# sourceMappingURL=style.css.map */
