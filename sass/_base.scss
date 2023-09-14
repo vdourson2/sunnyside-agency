@@ -53,3 +53,28 @@ table {
 *, *::before, *::after {
     box-sizing: border-box;
   }
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap');
+
+//Variables font
+$font-titles: 'Fraunces', serif;
+$font-p: 'Barlow', sans-serif;
+
+//Variable colors : primary colors
+//Primary colors
+$color-red: hsl(7, 99%, 70%);
+$color-yellow: hsl(51, 100%, 49%);
+$color-cyan_cherryText: hsl(167, 40%, 24%);
+$color-blue_mandarinText: hsl(198, 62%, 26%);
+$color-cyan_footer: hsl(168, 34%, 41%);
+
+//Neutral colors
+$color-grey_Emily: hsl(212, 27%, 19%);
+$color-grey_Trust: hsl(213, 9%, 39%);
+$color-grey_whiteText: hsl(232, 10%, 55%);
+$color-blue_director_testimonial: hsl(210, 4%, 67%);
+$color-white: hsl(0, 0%, 100%);
+
+
