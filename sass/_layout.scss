@@ -14,9 +14,12 @@
 .header__menu {
     display: flex;
     justify-content:space-between;
-    height: 24px;
+    &__logo{
+        width:170px;
+        height:33px;
+    }
     &__list {
-    display:none;
+        display:none;
     }
     &__burger{
         display: flex;
@@ -51,9 +54,26 @@
 .board{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    
+    grid-template-areas: 
+        "egg"
+        "eggText"
+        "glass"
+        "glassText";
     width:100%;
     &__card{
+        height:
+        &--egg{
+            grid-area: egg;
+        }
+        &--eggText{
+            grid-area: eggText;
+        }
+        &--glass{
+            grid-area: glass;
+        }
+        &--glassText{
+            grid-area: glassText;
+        }
         &__img{
             display:block;
             width:100%;
@@ -94,44 +114,288 @@
 .services{
     display: flex;
     flex-direction: column;
-    height: 1200px;
-    &__card{
-        text-align: center;
-        background-position: center;
+}
+.services__card{
+    text-align: center;
+    background-position: center;
+    &--cherry{
+        background-image: url(resources/images/photos/image-graphic-design.jpg);
+    }
+    &--mandarin{
+        background-image: url(resources/images/photos/image-photography.jpg);
+    }
+    &__title{
+        font-family: $font-titles;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 35px;
+        margin:398px 0 27px 0;
         &--cherry{
-            background-image: url(resources/images/photos/image-graphic-design.jpg);
+            color:$color-cyan_cherryText;
         }
         &--mandarin{
-            background-image: url(resources/images/photos/image-photography.jpg);
+            color:$color-blue_mandarinText;
         }
-        &__title{
-            font-family: $font-titles;
-            font-weight: 900;
-            font-size: 28px;
-            line-height: 35px;
-            margin:398px 0 27px 0;
-            &--cherry{
-                color:$color-cyan_cherryText;
-            }
-            &--mandarin{
-                color:$color-blue_mandarinText;
-            }
+    }
+    &__text{
+        font-family: $font-p;
+        font-weight: 600;
+        font-size:15px;
+        line-height: 27px;
+        margin:0 24px 59px 24px;
+        &--cherry{
+            color:$color-cyan_cherryText;
         }
-        &__text{
-            font-family: $font-p;
-            font-weight: 600;
-            font-size:15px;
-            line-height: 27px;
-            margin:0 24px 59px 24px;
-            &--cherry{
-                color:$color-cyan_cherryText;
-            }
-            &--mandarin{
-                color:$color-blue_mandarinText;
-            }
+        &--mandarin{
+            color:$color-blue_mandarinText;
         }
     }
 }
 
 
+.testimonials{
+    text-align: center;
+    margin: 64px 24px 0 24px;
+}
+
+.testimonials__title{
+    text-transform: uppercase;
+    font-family: $font-titles;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: 4px;
+    color: $color-blue_director_testimonial;
+}
+
+.testimonials__wrapCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:64px;
+    margin: 64px 0 86px 0;
+    &__card{
+        &__img{
+            display: block;
+            margin: auto;
+            width: 72px;
+            border-radius: 36px;
+        }
+        &__text{
+            font-family: $font-p;
+            font-weight: 600;
+            font-size: 18px;
+            color: $color-grey_Trust;
+            line-height: 32px;
+            margin: 32px 0;
+        }
+        &__name{
+            font-family: $font-titles;
+            color: $color-grey_Emily;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 22px;
+
+        }
+        &__post{
+            color: $color-blue_director_testimonial;
+            font-family: $font-p;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 25px;
+            margin-top: 9px;
+        }
+    }
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    &__img{
+        width: 50vw;
+        height: 50vw;
+        object-fit:cover;
+    }
+}
+
+.footer{
+    background-color: $color-cyan_footerBcg;
+    text-align: center;
+    color:$color-cyan_footerText;
+    padding-bottom:1px;
+}
+
+.footer__logo{
+    width:170px;
+    height: 33px;
+    margin-top: 64px;
+    margin-bottom:40px;
+    filter: brightness(0) saturate(100%) invert(33%) sepia(97%) saturate(270%) hue-rotate(118deg) brightness(96%) contrast(91%);
+   
+}
+
+.footer__menu{
+    &__liste{
+        display: flex;
+        justify-content: space-between;
+        width: 297px;
+        margin:auto;
+        &__item{
+            font-family: $font-p;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+}
+
+.footer__resSoc{
+    margin:88px 107px 80px 104px;
+    display: flex;
+    justify-content: space-between;
+    width:164px;
+    margin:80px auto;
+    &__anchor{
+        &__svg{
+            fill:white;
+        }
+        &:hover{
+             
+            svg{
+                fill:white;
+            }
+        }
+    }
+    &:hover{
+        color:white
+    }
+}
+
+@media screen {
+    
+}
+
+@media screen and (min-width:1024px) {
+//Desktop
+.header{
+    background-size: auto 800px;
+    height: 800px;
+    padding: 34px 48px 0 40px;
+    }
+
+.header__menu {
+    align-items: center;
+    &__list {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 47px;
+        &__item{
+            font-family: $font-p;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            &--button{
+                font-family: $font-titles;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 15px;
+                width: 140px;
+                height: 56px;
+                background-color: rgb(255,255,255,1);
+                border-radius: 50px;
+                text-align: center;
+                color:$color-grey_Emily;
+                line-height: 25px;
+                padding:16px 0;
+            }
+            &--button:hover{
+                color:white;
+                background-color: rgb(255,255,255,0.4);;
+            }
+        }
+    }
+    &__burger{
+        display: none;
+    }
+}
+
+.header__title{
+    font-size: 56px;
+    line-height: 69px;
+    letter-spacing: 9px;
+    margin: 105px 0 97px 0;
+}
+
+.board{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 600px 600px;
+    grid-template-areas: 
+    "eggText egg"
+    "glass glassText";
+    &__card{
+        &--info{
+            margin:158px 110px 157px 165px;
+            text-align: left;
+        }
+        &__img{
+            width: 100%;
+            height: 600px;
+            object-fit:cover;
+        }
+        &__title{
+            font-size: 40px;
+            line-height: 50px;
+            // width: 445px;
+            // margin:auto;
+        }
+        &__text{
+            font-size: 17px;
+
+        }
+        &__anchor{
+
+        }
+    }
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+}
+
+.services__card{
+    width:50%;
+    padding:398px 190px 59px 191px;
+    
+    &__title{
+        margin:0 0 27px 0;
+    }
+    &__text{
+        font-size:16px;
+        margin:0px;
+        width:339px;
+    }
+}
+
+.testimonials{
+    margin: 160px 165px;
+}
+
+.testimonials__wrapCards{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    &__card{
+        width:350px;
+    }
+}
+
+.gallery{
+    &__img{
+        width: 25vw;
+        height: 447px;
+    }
+}
+
+}
 
