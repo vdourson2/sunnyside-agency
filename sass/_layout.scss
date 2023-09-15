@@ -107,6 +107,18 @@
             font-style: 15px;
             line-height: 25px;
             letter-spacing: 1px;
+            &--egg{
+                text-decoration: solid underline 10px $color-yellow-transp;
+                &:hover{
+                    text-decoration: solid underline 10px $color-yellow-opaque;
+                }
+            }
+            &--glass{
+                text-decoration: solid underline 10px $color-red-transp;
+                &:hover{
+                    text-decoration: solid underline 10px $color-red-opaque;
+                }
+            }
         }
     }
 }
@@ -118,6 +130,7 @@
 .services__card{
     text-align: center;
     background-position: center;
+    background-size: cover;
     &--cherry{
         background-image: url(resources/images/photos/image-graphic-design.jpg);
     }
@@ -244,6 +257,9 @@
             font-weight: 600;
             font-size: 18px;
             line-height: 25px;
+            &:hover{
+                color:white;
+            }
         }
     }
 }
@@ -264,13 +280,10 @@
                 fill:white;
             }
         }
+        &:hover{
+            filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7488%) hue-rotate(287deg) brightness(107%) contrast(103%);
+        }
     }
-    &:hover{
-        color:white
-    }
-}
-
-@media screen {
     
 }
 
@@ -365,15 +378,15 @@
 
 .services__card{
     width:50%;
-    padding:398px 190px 59px 191px;
+    padding:398px 0 59px 0;
     
     &__title{
         margin:0 0 27px 0;
     }
     &__text{
         font-size:16px;
-        margin:0px;
         width:339px;
+        margin:auto;
     }
 }
 

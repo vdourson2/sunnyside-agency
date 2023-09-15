@@ -64,7 +64,8 @@ $font-p: 'Barlow', sans-serif;
 
 //Variable colors : primary colors
 //Primary colors
-$color-red: hsl(7, 99%, 70%);
+$color-red-opaque: hsla(7, 99%, 70%,1);
+$color-red-transp: hsla(7, 99%, 70%,0.5);
 $color-yellow-opaque: hsl(51, 100%, 49%);
 $color-yellow-transp: rgba(250,212,0,0.5);
 $color-cyan_cherryText: hsl(167, 40%, 24%);

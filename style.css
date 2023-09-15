@@ -161,6 +161,18 @@ table {
   line-height: 25px;
   letter-spacing: 1px;
 }
+.board__card__anchor--egg {
+  text-decoration: solid underline 10px rgba(250, 212, 0, 0.5);
+}
+.board__card__anchor--egg:hover {
+  text-decoration: solid underline 10px hsl(51deg, 100%, 49%);
+}
+.board__card__anchor--glass {
+  text-decoration: solid underline 10px hsla(7deg, 99%, 70%, 0.5);
+}
+.board__card__anchor--glass:hover {
+  text-decoration: solid underline 10px hsl(7deg, 99%, 70%);
+}
 
 .services {
   display: flex;
@@ -170,6 +182,7 @@ table {
 .services__card {
   text-align: center;
   background-position: center;
+  background-size: cover;
 }
 .services__card--cherry {
   background-image: url(resources/images/photos/image-graphic-design.jpg);
@@ -292,6 +305,9 @@ table {
   font-size: 18px;
   line-height: 25px;
 }
+.footer__menu__liste__item:hover {
+  color: white;
+}
 
 .footer__resSoc {
   margin: 88px 107px 80px 104px;
@@ -306,8 +322,8 @@ table {
 .footer__resSoc__anchor:hover svg {
   fill: white;
 }
-.footer__resSoc:hover {
-  color: white;
+.footer__resSoc__anchor:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7488%) hue-rotate(287deg) brightness(107%) contrast(103%);
 }
 
 @media screen and (min-width: 1024px) {
@@ -385,15 +401,15 @@ table {
   }
   .services__card {
     width: 50%;
-    padding: 398px 190px 59px 191px;
+    padding: 398px 0 59px 0;
   }
   .services__card__title {
     margin: 0 0 27px 0;
   }
   .services__card__text {
     font-size: 16px;
-    margin: 0px;
     width: 339px;
+    margin: auto;
   }
   .testimonials {
     margin: 160px 165px;
